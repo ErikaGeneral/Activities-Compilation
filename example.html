@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+ <!-- materials icon -->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Color Pallets</title>
+    <link href="example.css" rel="stylesheet" />
+</head>
+
+<body>
+<!--Sidenav Structure-->
+
+<ul id="slide-out" class="sidenav table-of contents">
+
+    <li><a href="#introduction">Introduction
+        <i class="material-icons">add_to_photos</i>
+    </a></li>
+    <li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li><a href="#structure">Structure
+            <i class="material-icons">add_box</i>
+        </a></li>
+
+        <li><a href="#initialization">Initialization
+            <i class="material-icons">add_circle</i>
+        </a></li>
+          </div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
+ </a> </ul>
+ <ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger">
+        <i class="medium material-icons">menu</i></a>
+</ul>
+    
+<h1>Type selectors</h1>
+<p>Veggies es bonus vobis, proinde vos postulo essum magis <span>kohlrabi welsh onion</span> daikon amaranth tatsoi tomatillo
+    melon azuki bean garlic.</p>
+
+<p>Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+    greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+
+<p>Turnip greens yarrow ricebean rutabaga <em>endive cauliflower</em> sea lettuce kohlrabi amaranth water spinach avocado
+    daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
+</p>
+
+
+
+
+
+
+<!--Parallax-->
+
+<div class="parallax-container">
+    <div class="parallax">
+    <img src="images/BANNER.jpg" alt="">
+    
+    </div>
+    </div>
+    
+    <div class="section green lighten-5">
+        <div class="row container">
+            <div class="row">
+            <div class="col s12 m9">
+                <div id="introduction" class="scrollspy">
+                    <h2 class="header black-text">Introduction</h2>
+                <form action="">
+                <div class="input-field">
+                    <input type="text" class="datepicker">
+                    <label for="date">DATE</label>
+                  </div>
+                 
+                </form>
+    
+                <div class="input-field">
+                    <input type="text" class="timepicker">
+                    <label for="time">TIME</label>
+                </div>
+                </form>
+    
+              <!-- Chips-->
+      <!-- Default with no input (automatically generated)  -->
+      <div class="chips"></div>
+      <div class="chips chips-initial"></div>
+      <div class="chips chips-placeholder"></div>
+      <div class="chips chips-autocomplete"></div>
+    
+      <!-- Customizable input  -->
+      <div class="chips">
+        <input class="custom-class">
+      </div>
+          
+   <!--Jquery CDN-->
+   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+  </script>
+
+<script>
+ $(document).ready(function() {
+   // Parallax init
+   $('.parallax').parallax();
+   // Scrollspy init
+   $('.scrollspy').scrollSpy();
+    // Sidenav init
+    $('.sidenav').sidenav() ;
+       edge: 'right'
+       // Date Picker
+    $('.datepicker').datepicker() ;
+        // Time Picker
+        $('.timepicker').timepicker() ;
+// Chips
+$('.chips').chips();
+ $('.chips-initial').chips({
+   data: [{
+     tag: 'Facebook',
+   }, {
+     tag: 'Twitter',
+   }, {
+     tag: 'Instagram',
+   }],
+ });
+ $('.chips-placeholder').chips({
+   placeholder: 'Enter your name',
+   
+ });
+ $('.chips-autocomplete').chips({
+   autocompleteOptions: {
+     data: {
+       'Facebook': null,
+       'Twitter': null,
+       'Instagram': null
+     },
+     limit: Infinity,
+     minLength: 1
+   }
+ });
+        
+
+    });
+
+</script>
+    
+</body>
+</html>

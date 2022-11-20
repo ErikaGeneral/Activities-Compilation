@@ -1,0 +1,48 @@
+p { 
+    color: rgb(3, 2, 22);
+    width: 500px;
+    border: 1px solid black;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: red;
+  }
+
+  p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+html {
+    background-color: #50a15d;
+  }
+
+  body {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #b98439;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  span {
+    background-color: yellow;
+}
+
+strong {
+    color: rebeccapurple;
+}
+
+em {
+    color: rebeccapurple;
+}
+    
